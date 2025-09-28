@@ -1,0 +1,5 @@
+{
+  "name": "Qwen AI Chat",
+  "description": "An intelligent chatbot with a unique and attractive UI, featuring chat history, user authentication, an admin panel, and a news feed. Built with React, TypeScript, and Tailwind CSS, powered by Google's Gemini API.",
+  "requestFramePermissions": []
+}
