@@ -1,7 +1,7 @@
-
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { BotIcon } from '../icons/BotIcon';
+import { MOCK_USERS } from '../../constants';
 
 const LoginView: React.FC = () => {
   const [username, setUsername] = useState('');
@@ -85,6 +85,18 @@ const LoginView: React.FC = () => {
             </button>
           </div>
         </form>
+
+        <div className="mt-6 pt-6 border-t border-gray-200 text-center text-sm text-gray-500">
+            <p className="font-semibold">اطلاعات ورود جهت تست:</p>
+            <div className="mt-2 space-y-1 text-left inline-block">
+                {MOCK_USERS.map(user => (
+                    <div key={user.id} className="text-xs">
+                        <span className="font-mono bg-gray-100 p-1 rounded">{user.username}</span> / <span className="font-mono bg-gray-100 p-1 rounded">{user.password}</span> ({user.role})
+                    </div>
+                ))}
+            </div>
+        </div>
+
       </div>
     </div>
   );
