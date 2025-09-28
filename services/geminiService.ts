@@ -1,7 +1,7 @@
 
-const API_KEY = "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";
+const API_KEY = "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";
 const API_URL = "https://openrouter.ai/api/v1/chat/completions";
-const MODEL_NAME = "qwen/qwen2.5-vl-72b-instruct:free";
+const MODEL_NAME = "openai/gpt-3.5-turbo";
 
 export const sendMessageToAI = async (prompt: string): Promise<string> => {
   if (!API_KEY.startsWith("sk-or-")) {
